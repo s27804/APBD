@@ -9,8 +9,9 @@ Console.WriteLine("Modyfikacja 3");
 static double average(int[] table)
 {
     int sum = 0;
-    for (int z = 0; z < table.Length; z++)
-        sum += table[z];
+
+    for (int x = 0; x < table.Length; x++)
+        sum += table[x];
 
     double result = sum / table.Length;
     Console.WriteLine(result);
