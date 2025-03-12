@@ -17,5 +17,18 @@ static double average(int[] table)
     return result;
 }
 
-int[] table = [1,2,3,4,5];
+static int maxValue(int[] table)
+{
+    int max = 0;
+    for(int i = 0;i < table.Length;i++)
+    {
+        if (table[i] > max)
+            max = table[i];
+    }
+    Console.WriteLine(max);
+    return max;
+}
+
+int[] table = [1, 2, 5, 4, 3];
 average(table);
+maxValue(table);
